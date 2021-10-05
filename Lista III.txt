@@ -1,0 +1,51 @@
+1-
+Nota = float(input("Digite uma nota: "))
+while (Nota<0) or (Nota>10):
+    if (Nota<0) or (Nota>10):
+        print("Digite um valor entre 0 e 10. VALOR %f É INVÁLIDO !"%Nota)
+        Nota = float(input("Digite uma nota: "))
+    else:
+        print("Nota salva!")
+print("Nota salva!")
+
+2-
+login = str(input('login:'))
+senha = str(input('senha:'))
+while login == senha:
+    if login == senha:
+        print('Senha e login não podem ser iguais. Digite novamente:')
+        login = str(input('login:'))
+        senha = str(input('senha:'))
+    else:
+        print('Senha e login salvas com sucesso.')
+print('Senha e login salvas com sucesso.')
+
+3-
+A=80000
+B=200000
+Ano=0
+while A<=B:
+    A= A+A*0.03
+    B=B+B*0.015
+    Ano +=1
+print("Serão precisos %d anos para  a população do país A ultrapasse ou iguale a população do país B."%Ano)
+
+
+4-
+N = int(input('Digite um número: '))
+N1=1
+N2=0
+for C in range(0,N):
+    N3 = N1 + N2
+    N1=N2
+    N2=N3
+    print(N3)
+
+5-
+N1 = int(input('Digite um número:'))
+N2 = int(input('Digite outro número:'))
+while (N1%N2 != 0):
+    N2 = N1%N2
+    N1 = N2
+print (f'mdc = {N2}')
+

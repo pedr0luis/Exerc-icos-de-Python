@@ -1,0 +1,59 @@
+1-
+N1 = int(input("Digite um número:"))
+N2 = int(input("Digite um número:"))
+print("%d + %d = %d"%(N1,N2,N1+N2))
+
+2-
+N = float(input("Digite valor em m:"))
+print("%f m em milímitro é %.3f mm" %(N, N*1000))
+
+3-
+D = int(input("Dia:"))
+D = D * 24
+H = int(input("Hora:"))
+H = (D + H) * 60
+M = int(input("Minuto:"))
+M = (M + H) * 60
+S = int(input("Segundo:"))
+S = M + S
+print("%d s" %(S))
+
+4-
+S = float(input("Digite salário R$ "))
+P = float(input("Digite porcentagem: "))
+P = P/100
+print("Após o aumento de %f, novo salário será: R$ %.2f" %((P*100),(S*P+S)))
+
+5-
+M = float(input("Preço da mercadoria: R$"))
+P = float(input("Percentual de desconto:"))
+print("Total a pagar R$%.2f"%(M-((M*P/100))))
+
+6-
+D = float(input("Distância a ser percorrida em Km: "))
+V = int(input("Velociadade em Km/h: "))
+print("Tempo para terminar essa viagem será %.2f h"%(D/V))
+
+7-
+C = float(input("Digite temperatura em ºC:"))
+print("Convertendo %.2fºC para F é: %.2f"%(C,((9*C/5)+32)))
+
+8-
+F = float(input("Digite temperatura em f:"))
+print("Convertendo %.2fF para ºC é: %.2f"%(F,((F-31)*5/9)))
+
+9-
+Km = int(input("Km percorrido:"))
+D = int(input("Dias alugados:"))
+print("Total a pagar R$%.2f"%(60*D+Km*0.15))
+
+10-
+C = int(input("Cigarros fumados por dia:"))
+A = int(input("Quantidade de anos já fumados: "))
+print("Você viverá %.2f dias a menos."%(((10*C)*A)/1440))
+
+11-
+X = 2 **1000000
+X = str(X)
+print(len(X)," dígitos há em 2 elevado a um milhão.")
+

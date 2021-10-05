@@ -1,7 +1,7 @@
-Mes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosoto', 'setembro', 'outubro', 'novembro','dezembro']
-M=0
-while (M<1) and (M>12):
-    M = int(input('Digite um número entre 1 e 12: '))
-    if (M<1) and (M>12):
-        print('Mes inválido. Digite novamente!')
-
+A = float(input("Digite tamanho em m² a ser pintado: "))
+L = A * 3 #quantidade de Litros a serem usadas
+L = round(L) #arredondando o número de Litro
+if (L<=18):
+    print("Total a pagar será: R$ 18.00.")
+else:
+    print("Total a pagar será: R$ %.2f."%((L//18)*80))

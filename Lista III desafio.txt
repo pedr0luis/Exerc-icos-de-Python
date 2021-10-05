@@ -1,0 +1,59 @@
+1-
+N = int(input("Digite um número: "))
+for C in range (1,N):
+    if ((C * (C+1) * (C + 2)) ==N):
+        print(C," x ", C+1," x ", C+2," = ",N)
+        C = N+2
+if (C<=N):
+    print(N," não é número triângulo.")
+        
+
+2-
+Conta = float(input("Total a pagar: R$"))
+Pago = float(input("Valor recebido: R$"))
+N = Pago - Conta
+print(' = = = = = T R O C O = = = = =')
+print('')
+C = N//50
+print('%.d nota(s) de R$ 50.00'%C)
+N = N%50
+C = N//20
+print('%.d nota(s) de R$ 20.00'%C)
+N = N%20
+C = N//10
+print('%.d nota(s) de R$ 10.00'%C)
+N = N%10
+C = N//5
+print('%.d nota(s) de R$ 5.00'%C)
+N = N%5
+C = N//2
+print('%.d nota(s) de R$ 2.00'%C)
+N = N%2
+print('%.d nota(s) de R$ 1.00'%N)
+
+3-
+N = int(input('Digite um número:'))
+P=0
+for C in range (2,N):
+    if (N % C == 0):
+        P += 1
+if(P==0):
+    print(N,' é um número primo.')
+else:
+    print(N,' não é um número primo.')
+
+4-
+N = int(input("Digite um número:"))
+P=0
+print("Decompondo ",N," em números primos:")
+for C in range(N,0,-1):
+    for c in range (C,0,-1):
+        if (C % c == 0):
+            P += 1
+    if(P==2):
+        print(C)
+        P=0
+    else:
+        P=0
+        
+

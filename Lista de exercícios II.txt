@@ -1,0 +1,72 @@
+1-
+A=float(input("Digite o valor do lado A: "))
+B=float(input("Digite o valor do lado B: "))
+C=float(input("Digite o valor do lado C: "))
+if (A > B + C) or (B >A + C) or (C > A + B):
+    print("Valores digitados não formam um triângulo.")
+else:
+    if (A==B) and (B==C) and (A==C):
+        print("Triângulo Equilátero.")
+    elif (A!=B) and (B!=C) and (A!=C):
+        print("Triângulo Escaleno.")
+    else:
+        print("Tiângulo Isóceles.")
+
+2-
+A = int(input("Digite ano: "))
+AA = A%4
+if (AA==0):
+    print("%.d é um ano bissexto."%(A))
+else:
+    print("%.d NÃO é um ano bissexto."%(A))
+
+3-
+Kg = float(input("Digite quantidade pescada: "))
+if (Kg <= 50):
+    print("ZERO.")
+else:
+    print("Valor de multa a pagar: R$%.2f"%((Kg-50)*4))
+
+4-
+N = float(input("Digite um número: "))
+M = float(input("Digite um segundo número: "))
+if (N>M):
+    M=N
+N = float(input("Digite um terceiro número: "))
+if (N>M):
+    print("Maior maior número digitado foi:",N)
+else:
+    print("Maior maior número digitado foi:",M)
+
+5-
+N = float(input("Digite um número: "))
+m = float(input("Digite um segundo número: "))
+if (N<m):
+    m=N
+N = float(input("Digite um terceiro número: "))
+if (N<m):
+    print("Maior mnenor número digitado foi:",N)
+else:
+    print("Maior maior número digitado foi:",m)
+
+6-
+V = float(input("Valor recebido por hora: R$"))
+H = int(input("Horas trabalhadas no mês:"))
+B = V*H
+print("Salário bruto: R$%.2f"%B)
+IR = B*0.11
+print("Imposto de Renda é R$%.2f"%IR)
+INSS = B*0.08
+print("INSS: R$%.2f"%INSS)
+S = B * 0.05
+print("Sindicato: R$%.2f"%S)
+print("Salário liquido: R$%.2f"%(B - (IR + INSS + S)))
+
+7-
+A = float(input("Digite tamanho em m² a ser pintado: "))
+L = A * 3 #quantidade de Litros a serem usadas
+L = round(L) #arredondando o número de Litro
+if (L<=18):
+    print("Total a pagar será: R$ 18.00.")
+else:
+    print("Total a pagar será: R$ %.2f."%((L//18)*80))
